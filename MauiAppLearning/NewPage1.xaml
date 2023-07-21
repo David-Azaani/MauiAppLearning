@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.NewPage1"
+             xmlns:resources="clr-namespace:MauiApp2.Resources"
+             Title="NewPage1">
+    <VerticalStackLayout>
+        <Label 
+            Text="Count 0"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="32"
+            TextColor="DarkRed"
+            x:Name="LblCounter"/>
+
+
+
+        <Button Text="Click me!" FontSize="25" HorizontalOptions="Center" VerticalOptions="Center" 
+                TextColor="{x:Static Member=resources:SharedResources.FontColor}"
+           Clicked="Button_OnClicked"     />
+    </VerticalStackLayout>
+</ContentPage>
